@@ -1,0 +1,123 @@
+@import url('https://fonts.cdnfonts.com/css/noir');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400&family=Noto+Sans&family=REM:wght@200&display=swap');
+
+
+body {
+    background-color: #101010;
+}
+
+.nav {
+    width: 50%;
+    margin: auto;
+}
+
+.options {
+    color: #E5E5E5;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+.skills {
+    padding: 60px;
+    font-family: 'Noir', sans-serif;
+    color: #E5E5E5;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.home,
+.about,
+.projects {
+    padding: 60px;
+    font-family: 'Noir', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    color: #565656;
+}
+
+/*.contact {
+    width: 100%; 
+    margin: auto;
+}*/
+
+.contacts {
+    color: #E5E5E5;
+    display: flex;
+    /* width: 50%; */
+    margin: auto;
+    margin-top: 0px;
+    /* margin-bottom: 10px; */
+    /* margin-left: 180px; */
+    /* margin-right: 130px; */
+    align-items: center;
+}
+
+.mail,
+.dribble,
+.linkedin,
+.instagram {
+    padding-left: 150px;
+    padding-right: 130px;
+    padding-top: 70px;
+    /* padding-bottom: 100px; */
+    color: #707070;
+    font-family: 'Noir', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    /* margin-bottom: 13px; */
+}
+
+
+.content {
+    margin-left: 50px;
+    margin-right: 80px;
+    /* margin-bottom: 0px; */
+}
+
+.aboutm {
+    color: #CDCDCD;
+    font-family: 'Kanit', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 41px;
+    letter-spacing: 2.7px;
+    margin-left: 100px;
+    margin-right: 75px;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.download-resume {
+    margin-left: 142px;
+    margin-right: 80px;
+}
+
+
+.resume {
+    margin-left: 142px;
+    margin-right: 80px;
+    /* margin-top: 0px; */
+    border-radius: 10px;
+    background: #ffffff;
+    text-align: center;
+    padding: 20px 33px 10px 33px;
+    color: #000;
+    font-family: 'Noir', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.05px;
+}
