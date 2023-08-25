@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter</title>
+  <script href="bi2.js"></script>
+  <link rel="stylesheet" href="bi2.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Temperature Converter</h1>
+    <label for="celsius">Celsius:</label>
+    <input type="number" id="celsius" placeholder="Enter temperature in Celsius" />
+    <label for="fahrenheit">Fahrenheit:</label><br>
+    <input type="number" id="fahrenheit" placeholder="Enter temperature in Fahrenheit" />
+    <button id="convertBtn">Convert</button>
+    <div class="result" id="result"></div>
+  </div>
+  
+  <script>
+    const convertBtn = document.getElementById('convertBtn');
+    const celsiusInput = document.getElementById('celsius');
+    const fahrenheitInput = document.getElementById('fahrenheit');
+    const resultDiv = document.getElementById('result');
+
+    convertBtn.addEventListener('click', () => {
+      const celsiusValue = parseFloat(celsiusInput.value);
+      const fahrenheitValue = parseFloat(fahrenheitInput.value);
+
+      if (!isNaN(celsiusValue)) {
+        const convertedFahrenheit = (celsiusValue * 9 / 5) + 32;
+        fahrenheitInput.value = convertedFahrenheit.toFixed(2);
+      }
+
+      if (!isNaN(fahrenheitValue)) {
+        const convertedCelsius = (fahrenheitValue - 32) * 5 / 9;
+        celsiusInput.value = convertedCelsius.toFixed(2);
+      }
+
+      resultDiv.textContent = "Conversion complete!";
+    });
+  </script>
+
+</body>
+
+</html>
